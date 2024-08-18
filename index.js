@@ -16,3 +16,34 @@ return count
  var square = myFunction();
   console.log(`global count: ${count}`)
   console.log(`local count : ${square}`)
+
+
+  //problem 3
+  var total = 50
+  function addTotal(x){
+    total = total + x
+    return total
+  }
+  var updatedTotal = addTotal(30)
+  console.log(`updated value of total ${updatedTotal}`)
+
+
+  //problem 4
+
+  function greetUser(userName){
+    var gMessage = "Hello, "+ userName
+    return gMessage
+  }
+  var Message = greetUser("Moeed")
+  console.log(`Message:${Message}`)
+
+
+  //problem 5
+
+  var status = "intractive"
+  function activate(){
+    status = "ACTIVE"
+    console.log(`The value of status inside function: ${status}`)
+  }
+  activate();
+  console.log(`The value of status outside funvtion: ${status}`)
